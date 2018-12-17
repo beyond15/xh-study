@@ -1,0 +1,47 @@
+1.扎实的计算机基础（计算机操作系统、计算机网络、计算机组成原理、数据结构和算法）
+2.熟练linux（包括redis，zookeeper，rabbitmq,mongodb,mysql,oracle,kafaka,hadoop,k8s,nginx的安装）
+vm ware/vm vsphere/secureCRT
+lvm  Logical Volume Manager（逻辑卷管理）的简写
+RHCE
+CCNP Cisco Certified Network Professional——思科认证网络高级工程师
+3.代码编写能力，设计模式的应用。
+4.devops和CICD，包括版本控制工具，maven jenkins git svn docker（yum remove docker，yum remove docker-selinux）
+如果搭建gitlab 
+安装一个ubantu
+github的issues  pull requests
+学会用github记笔记
+5.消息队列rabbitmq,kafaka
+6.spring,springmvc,mybatis,jpa,模板引擎,springboot
+7.redis,es ,mongodb 缓存的开发 elasticSearch
+8.多线程，并发，高可用，高负载，JVM，性能优化
+9.pentaho+saiku+kettle kylin
+10.jemter
+11.python code  scrapy ??
+12.lantern 科学上网，网站，阿里云，
+13.ADT，spss
+
+其他：
+
+haproxy 高可用性，负载均衡，tcp http的应用程序代理
+什么是挂载
+rpm 的安装  rpm -ivh
+
+
+ISO OSI网络管理体系和TCP/IP协议
+应用层
+表示层
+会话层
+传输层
+网络层
+数据链路层
+物理层
+
+
+
+[root@SJK1 ~]#pvcreate pvname
+[root@SJK1 ~]# vgcreate vgname pvname
+[root@SJK1 ~]# lvcreate -L lvsize -n lvname  vgname
+[root@SJK1 ~]# mkfs -t ext4 lvname
+[root@SJK1 ~]# mount lvname  mount point
+
+
