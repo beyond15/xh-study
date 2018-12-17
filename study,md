@@ -36,6 +36,8 @@ ISO OSI网络管理体系和TCP/IP协议
 数据链路层
 物理层
 
+## ext4
+
 
 
 [root@SJK1 ~]#pvcreate pvname
