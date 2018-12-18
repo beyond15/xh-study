@@ -9,7 +9,8 @@ CCNP Cisco Certified Network Professional——思科认证网络高级工程师
 如果搭建gitlab 
 安装一个ubantu
 github的issues  pull requests
-学会用github记笔记
+--学会用github记笔记
+--如何用git切换分支
 5.消息队列rabbitmq,kafaka
 6.spring,springmvc,mybatis,jpa,模板引擎,springboot
 7.redis,es ,mongodb 缓存的开发 elasticSearch
