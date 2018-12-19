@@ -1,0 +1,12 @@
+
+安装的Ubuntu如何查看本地ip
+1.下载net-tools
+sudo apt-get install net-tools
+2.终端输入命令
+ifconfig
+
+ubuntu如何换时区
+
+github的issues  pull requests
+
+什么是挂载
