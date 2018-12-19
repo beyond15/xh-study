@@ -21,3 +21,15 @@ github的issues  pull requests
 9.这不是它的目录。虽然/dev是个目录，但/dev/sdb1不是目录。可以发现ls/dev/sdb1无法执行。/dev/sdb1，是一个类似指针的东西，指向这个分区的原始数据块。mount前，系统并不知道这个数据块哪部分数据代表文件，如何对它们操作。
 10.插入CD，系统其实自动执行了 mount /dev/cdrom /media/cdrom。所以可以直接在/media/cdrom中对CD中的内容进行管理。
 
+
+Ubuntu安装程序
+
+sudo apt-get install 应用包名
+或者 自带的ubuntu软件 
+或者 *.deb
+使用第三方安装程序来解决：打开终端键入
+sudo apt install gdebi-core
+安装gdebi，然后进入deb包的目录，右键“打开终端”，键入：
+sudo gdebi XXX.deb
+
+
