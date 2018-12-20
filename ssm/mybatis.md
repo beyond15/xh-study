@@ -94,7 +94,35 @@ SQL映射文件
     </mapper>
 ```
 
+关于SQL映射文件的几个顶级元素配置：
+顶级元素配置  
+mapper：映射文件的根元素节点，只有一个属性namespace（命名空间）作用如下:用于区分不同的mapper，全局唯一绑定DAO接口，即面向接口编程。当namespace绑定某一接口之后，可以不用写该接口的实现类， MyBatis会通过接口的完全限定名查找到对应的mapper配置来执行SQL语句，因此namespace的命名必须要跟接口同名.     
+cache：配置给定命名空间的缓存    
+cache-ref：从其他命名空间引用缓存配置    
+resultMap：用来描述数据库结果集和对象的对应关系  
+sql：可以重用的SQL块，也可以被其他语句引用  
+insert：映射插入语句  
+update：映射更新语句  
+delete：映射删除语句  
+select：映射查询语句  
 
 
-
+测试类
+```
+SqlSession sqlSession=null;
+List<User> userList=new ArrayList<User>(); try{
+    sqlSession=MyBatisUtil.createSqlSession();
+    User user=new User();
+    user.setUserName("赵");
+    user.setUserRole(3);
+    userList=sqlSession.getMapper(UserMapper.class).getUserListByUser(user);
+}catch (Exception ex){
+    ex.printStackTrace();
+}finally {
+    MyBatisUtil.closeSqlSession(sqlSession);
+}
+for (User user:
+        userList) {
+    System.out.println(user.getUserName()+"\t"+user.getUserRole())
+```
 
