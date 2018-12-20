@@ -43,3 +43,29 @@ cd /usr/local/shell/
 echo "Execute shell Finish"
 ./startup.sh $spring_profile $jar_path $jar_name $project_name
 ```
+
+stop.sh
+```
+jar_name=${1}
+echo "Stopping" ${jar_name}
+pid=`ps -ef | grep ${jar_name} | grep -v grep | awk '{print $2}'`
+if [ -n "$pid" ]
+then
+   echo "kill -9 的pid:" $pid
+   kill -9 $pid
+fi
+```
+startup.sh
+```
+spring_profile=${1}
+jar_path=${2}
+jar_name=${3}
+project_name=${4}
+cd ${jar_path}/${project_name}/target/
+echo ${jar_path}/${project_name}/target/
+echo nohup java -jar ${jar_name} &
+BUILD_ID=dontKillMe nohup java -jar ${jar_name} --spring.profiles.active=${spring_profile} &
+```
+
+里面的坑挺多的，加油。
+
